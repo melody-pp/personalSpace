@@ -11,13 +11,73 @@
     <link rel="stylesheet" href="../css/gerenkongjian.css">
     <link rel="stylesheet" href="../css/duanxin.css">
     <link rel="stylesheet" href="../css/youjian.css">
+    <link rel="stylesheet" href="../js/pagination-search20150807/css/reset.css" />
+    <link rel="stylesheet" href="../js/pagination-search20150807/css/pagination.css" />
     <!--[if IE 7]>
     <style>
     .header {margin-left: -110px;}
     </style>
     <![endif]-->
     <style>
-
+    .pages {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+    
+    .pages .searchPage {
+        float: right;
+    }
+    
+    .middle .container img.starImg {
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+    
+    .middle .container li {
+        height: 32px;
+        line-height: 32px;
+        clear: both;
+        border-bottom: 1px solid #f1f0f0;
+    }
+    
+    .pages #Pagination .pagination .prev i {
+        margin-top: -6px;
+    }
+    
+    .pages #Pagination .pagination .next i {
+        margin-top: -6px;
+        margin-left: 3px;
+    }
+    
+    .daibanTitle {
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    
+    .daibanTitle .searchBox {
+        border: 1px solid #e2e0db;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .searchBox .searchIpt {
+        height: 30px;
+        line-height: 30px;
+        border: none;
+        padding-left: 6px;
+        width: 180px;
+    }
+    
+    .searchBox .searchIcon {
+        background: #fff;
+        cursor: pointer;
+        color: #e2e0db;
+        padding: 0 10px;
+        height: 30px;
+    }
     </style>
 </head>
 
@@ -34,7 +94,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                             <img src="../img/home.png" alt="">
+                            <img src="../img/home.png" alt="">
                         </a>
                     </li>
                     <li>
@@ -71,7 +131,7 @@
                     <p class="gexingqianming">出发之前永远是梦想，上路之后永远是挑战。</p>
                 </p>
             </div>
-            <div class="wodepindao">
+            <div class="wodepindao" style="margin-top: 20px;">
                 <h3 class="panelTitleH3"><i class="iconfont" style="color:#1d71b7;font-size: 25px;margin-right: 6px;">&#xe6c9;</i>我的频道
                 <i id="plus" class="iconfont" style="color:#566cae;margin-left: 10px;font-size: 20px;cursor: pointer;">&#xe614;</i>
                 <i id="suozhan" class="iconfont suozhan">&#xe661;</i>
@@ -130,7 +190,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="yewudaiban.html">
                                 <img src="../img/daiban.png" style="vertical-align: middle;">
                                 <span>业务待办</span>
                             </a>
@@ -144,22 +204,22 @@
                             </a>
                         </li>
                         <li>
-                            <a class="activeMenu" href="" style="position: relative;">
-                                <img src="../img/youjian1.png" style="vertical-align: middle;">
+                            <a href="youjian.html" style="position: relative;">
+                                <img src="../img/youjian.png" style="vertical-align: middle;">
                                 <span>邮件</span>
                                 <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red">&#xe609;</i>
                                 <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">1</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="richeng.html">
                                 <img src="../img/richeng.png" style="vertical-align: middle;">
                                 <span>日程</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="../img/shoucang.png" style="vertical-align: middle;">
+                            <a href="" class="activeMenu">
+                                <img src="../img/shoucang1.png" style="vertical-align: middle;">
                                 <span>标记</span>
                             </a>
                         </li>
@@ -170,7 +230,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="wodedingyue.html">
                                 <img src="../img/dingyue.png" style="vertical-align: middle;">
                                 <span>我的订阅</span>
                             </a>
@@ -244,96 +304,52 @@
                             </div>
                         </div>
                     </div>
+                    <p style="text-align: center;">
+                        <a href="javascript:;" style="text-decoration: underline;color:#1d71b7;">更多</a>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="middle">
-            <div class="duanxinSearch clearfix">
-                <span class="duanxinTitle fl">标记</span>
-                
+            <div class="daibanTitle clearfix">
+                <span class="fl" style="font-size: 15px;font-weight: 600;">标记</span>
                 <div class="searchBox clearfix fr">
                     <input class="fl searchIpt" type="text">
                     <i class="iconfont fl searchIcon">&#xe600;</i>
                 </div>
             </div>
-            <div class="duanxinContent">
-                <div class="dunxinIfo clearfix">
-                    <i class="iconfont fl youjianIcon">&#xe694;</i>
-                    <div class="fl duanxinNeirong">
-                        <p class="time"><span>ZYD</span>&nbsp;&nbsp;<span style="font-size: 12px;">2017-1-7  09:20</span></p>
-                        <div class="duanxinZuoBox">
-                            <div style="font-size: 13px;">
-                                <span>您好，您有一封来自XXX的新邮件！</span>
-                            </div>
-                            <div class="duanxintxt"><i class="iconfont pointIcon">&#xe609;</i><a class="youjiantxtLink" href="javascript:;">您好，关于XXX会议的通知，请您于2017年1月9日准时参加。</a><span id="huifu">回复</span>
-                            </div>
-                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="dunxinIfo clearfix">
-                    <i class="iconfont fl youjianIcon" style="font-size: 25px;">&#xe604;</i>
-                    <div class="fl duanxinNeirong">
-                        <p class="time"><span>ZYD</span>&nbsp;&nbsp;<span style="font-size: 12px;">2017-1-7  09:20</span></p>
-                        <div class="duanxinZuoBox">
-                            <div style="font-size: 13px;">
-                                <span>您好，您有一封来自XXX的新邮件！</span>
-                            </div>
-                            <div class="duanxintxt"><i class="iconfont pointIcon">&#xe609;</i><a class="youjiantxtLink" href="javascript:;">请web再提供下页面修改素材的方法。</a><span id="huifu" style="color:#a3a3a3;">已回复</span>
-                            </div>
-                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="dunxinIfo clearfix huifuduanxinIfo">
-                    <i class="iconfont fr youjianIcon">&#xe694;</i>
-                    <div class="fr duanxinNeirong">
-                        <p class="time"><span>2017-1-6 09:20</span></p>
-                        <div class="duanxinZuoBox">
-                            
-                            <div class="duanxintxt">
-                            <span> 我已经发送到您邮箱中了，请查收</span>
-                            </div>
-                            <i class="iconfont duihuakuangYou">&#xe79c;</i>
-                        </div>
-                    </div>
-                </div>
-                 <div class="dunxinIfo clearfix">
-                    <i class="iconfont fl youjianIcon">&#xe694;</i>
-                    <div class="fl duanxinNeirong">
-                        <p class="time"><span>ZYD</span>&nbsp;&nbsp;<span style="font-size: 12px;">2017-1-7  09:20</span></p>
-                        <div class="duanxinZuoBox">
-                            <div style="font-size: 13px;">
-                                <span>您好，您有一封来自XXX的新邮件！</span>
-                            </div>
-                            <div class="duanxintxt"><i class="iconfont pointIcon">&#xe609;</i><a class="youjiantxtLink" href="javascript:;">邮件系统效果图事宜 </a><span id="huifu">回复</span>
-                            </div>
-                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
-                        </div>
-                    </div>
-                </div>
-                <!-- 回复弹框 -->
-                <div id="huifuPop">
-                    <i class="iconfont huifucloseBtn">&#xe760;</i>
-                    <p>
-                        <span>接收人：</span>
-                        <input style="padding-left: 6px;" type="text" value="106903331234123">
-                    </p>
-                    <p class="clearfix" style="margin-top: 10px;">
-                        <span class="fl" style="margin-right: 6px;">内&nbsp;&nbsp;&nbsp;容：</span>
-                        <textarea class="fl" name="" id="" cols="65" rows="5" style="padding-left: 10px;padding-top: 10px;"></textarea>
-                        <a class="fl huifufasongBtn" href="javascript:;">发送</a>
-                    </p>
+            <div class="container" id="pageContentDiv">
+                <ul>
+                    <li>
+                        <img src="../img/shouji.png" class="fl">
+                        <span class="fl" style="margin-left: 5px;">106903331234123：【技术局办公室】社职改办通知：从2017年起职称外语成绩不再作为我社。</span>
+                        <span class="fr">2017-01-06</span>
+                        <img class="fr starImg" src="../img/xingxing.png">
+                    </li>
+                    <li>
+                        <img src="../img/lanxin.png" class="fl" style="width: 23px;">
+                        <span class="fl" style="margin-left: 5px;">106903331234123：【技术局办公室】社职改办通知：从2017年起职称外语成绩不再作为我社。</span>
+                        <span class="fr">2017-01-06</span>
+                        <img class="fr starImg" src="../img/xingxing.png">
+                    </li>
+                    <li>
+                        <img src="../img/shouji.png" class="fl">
+                        <span class="fl" style="margin-left: 5px;">106903331234123：【技术局办公室】社职改办通知：从2017年起职称外语成绩不再作为我社。</span>
+                        <span class="fr">2017-01-06</span>
+                        <img class="fr starImg" src="../img/xingxing.png">
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <div id="Pagination"></div>
+                <div class="searchPage">
+                    <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+                    <span class="page-go">跳转<input type="text">页</span>
+                    <a href="javascript:;" class="page-btn">跳转</a>
                 </div>
             </div>
         </div>
-        
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-   
     <script src="../js/jquery-1.9.1.min.js"></script>
     <!--[if lte IE 6]>
     
@@ -345,29 +361,56 @@
     <script src="../zTree_v3-master/js/jquery.ztree.core.js"></script>
     <script src="../js/idangerous.swiper.min.js"></script>
     <script src="../js/public_p.js"></script>
-    <script src="../js/mytree.js"></script>
+    <script type="text/javascript" src="../js/pagination-search20150807/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/pagination-search20150807/js/jquery.pagination.js"></script>
+    <script src="http://rap.taobao.org/rap.plugin.js?projectId=15965"></script>
+    <script type="text/javascript" src="../js/artTemplate.js"></script>
+    <script id="pageTemplate" type="text/html">
+        <ul>
+            {{each list as value i}}
+            <li>
+                <img src="{{ value.imgSrc}}" class="fl">
+                <span class="fl" style="margin-left: 5px;">
+                    {{ value.title }}
+                </span>
+                <span class="fr">{{ value.date}}</span>
+                <img class="fr starImg" src="../img/xingxing.png">
+            </li>
+            {{ /each }}
+        </ul>
+    </script>
     <script>
-    $(function() {
-        $quxiaobiaoji = $('.quxiaobiaoji');
-        $huifu = $('#huifu');
-        $huifuPop = $('#huifuPop');
-        $huifucloseBtn = $('.huifucloseBtn');
-        $quxiaobiaoji.click(function() {
-            var $this = $(this);
-            if ($this.text() === '标记') {
-                $this.text('取消标记');
-            } else {
-                $this.text('标记');
-            }
-        })
-        $huifucloseBtn.click(function() {
-            $huifuPop.hide();
-        })
-        $huifu.click(function() {
-            $huifuPop.toggle();
-        })
+    $(document).ready(function() {
 
-    })
+        $("#Pagination").pagination("15", {
+            callback: function(pageIndex, container) {
+
+                $.ajax({
+                    url: '/getPageContent',
+                    data: {
+                        page: pageIndex
+                    },
+                    type: 'GET',
+                    success: function(data) {
+                        if (data.status === 'Successful') {
+                            var list = data.list;
+                            var html = ['<ul>']
+                            for (var i = 0, len = list.length; i < len; i++) {
+                                var item = list[i];
+                                html.push('<li><img src="' + item.imgSrc + '" class="fl"><span class="fl" style="margin-left: 5px;">' + item.title + '</span><span class="fr">' + item.date + '</span><img class="fr starImg" src="../img/xingxing.png"></li>')
+                            }
+                            html.push('</ul>')
+                            $('#pageContentDiv').html(html.join(''));
+                        }
+                    }
+                })
+                return false;
+            }
+        });
+
+        var $middle = $('.middle');
+        $middle.height($(window).innerHeight() - 15);
+    });
     </script>
 </body>
 

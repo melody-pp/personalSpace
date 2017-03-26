@@ -14,20 +14,52 @@
     <script type="text/javascript">
     // When document has loaded, initialize pagination and form 
     $(document).ready(function() {
-        $("#Pagination").pagination("15");
+        $("#Pagination").pagination("15", {
+            callback: function(pageIndex, container) {
+
+                $.ajax({
+                    url: '/getPageContent',
+                    data: {
+                        page: pageIndex
+                    },
+                    type: 'GET',
+                    success: function(data) {
+                        if (data.status === 'Successful') {
+                            list = data.list;
+                            for (var i = 0, len = list.length; i < len; i++) {
+                                var item = list[i];
+
+                            }
+                        }
+                    }
+                })
+                return false;
+            }
+        });
     });
     </script>
 </head>
 
 <body>
+    <div class="container">
+    <ul>
+        <li>
+            <img src="../img/shouji.png" style="">
+            <span>106903331234123：【技术局办公室】社职改办通知：从2017年起职称外语成绩不再作为我社专业技术职务任职资格参评的必备条件。</span>
+            <img src="../img/xingxing.png">
+            <span>2017-01-06</span>
+        </li>
+    </ul>
+    </div>
     <div class="pages" style="float:left">
         <div id="Pagination"></div>
         <div class="searchPage">
-          <span class="page-sum">共<strong class="allPage">15</strong>页</span>
-          <span class="page-go">跳转<input type="text">页</span>
-          <a href="javascript:;" class="page-btn">GO</a>
+            <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+            <span class="page-go">跳转<input type="text">页</span>
+            <a href="javascript:;" class="page-btn">跳转</a>
         </div>
     </div>
 </body>
+<script src="http://rap.taobao.org/rap.plugin.js?projectId=15965"></script>
 
 </html>

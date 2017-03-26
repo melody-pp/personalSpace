@@ -27,9 +27,9 @@
         <div class="container clearfix" id="container">
             <div class="left fl">
                 <img id="logo" class="logo" src="../img/logo.png" alt="">
-                <h3 class="siteName fl">新华社办公信息化平台</h3>
+                <h3 class="siteName fl" style="height: 46px;line-height: 46px;">新华社办公信息化平台</h3>
                 <img class="zone fl" src="../img/zone.gif" alt="">
-                <h4 class="subSiteName fl">我的个人空间</h4>
+                <h4 class="subSiteName fl" style="height: 46px;line-height: 46px;">我的个人空间</h4>
             </div>
             <div class="right fr">
                 <ul>
@@ -72,7 +72,7 @@
                     <p class="gexingqianming">出发之前永远是梦想，上路之后永远是挑战。</p>
                 </p>
             </div>
-            <div class="wodepindao">
+            <div class="wodepindao" style="margin-top: 35px;">
                 <h3 class="panelTitleH3">
                 <i class="iconfont" style="color: #1d71b7;font-size: 25px;margin-right: 2px;">&#xe6c9;</i>
                 <span>我的频道</span>
@@ -247,6 +247,9 @@
                             </div>
                         </div>
                     </div>
+                    <p style="text-align: center;">
+                        <a href="javascript:;" style="text-decoration: underline;color:#1d71b7;">更多</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -331,6 +334,7 @@
         gridview: true,
         forceFit: false,
         rowList: [10, 20, 50, 100, 500, 1000],
+        resizeable:true,
         jsonReader: {
             root: "list",
             page: "page",

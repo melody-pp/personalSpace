@@ -1,6 +1,6 @@
 $(function() {
     function suitWarpperWidth() {
-        var windowWith = window.innerWidth;
+        var windowWith = $(window).innerWidth();
         var $wrapper = $('#wrapper');
         if (windowWith < 1131) {
             $wrapper.css('margin', 0);
@@ -141,22 +141,25 @@ $(function() {
     $(document).on('click', '.chacha', function() {
         $(this).parents('.tongxunlu').remove();
     })
-   
+
 
     var $xiaoxiPop = $('#xiaoxiPop');
     var $xiaoxiShortCut = $('.xiaoxiShortCut');
     var $fasongBtn = $('.fasongBtn');
     $(document).on('click', '.xiaoxiShortCut', function(e) {
-        console.log($xiaoxiPop)
+        var $this = $(this);
         $xiaoxiPop.css({
             display: "block",
-            left: e.clientX -167+ "px",
-            top: e.clientY+12+ "px"
+            left: e.clientX - 172 + "px",
+            top: e.clientY + 12 + "px"
         });
+
+        $this.css('width', '22px');
 
     })
     $fasongBtn.click(function() {
         $xiaoxiPop.hide();
+        $('.xiaoxiShortCut').css('width', '17px')
     })
 
 })
@@ -182,9 +185,3 @@ function chazhaolianxirenonfocus(obj) {
 function chazhaolianxirenonblur(obj) {
     $searchTxt_lxr.css('display', this.value ? 'none' : 'block');
 }
-
-
-
- 
-
-
