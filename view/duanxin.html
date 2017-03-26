@@ -243,6 +243,9 @@
                             </div>
                         </div>
                     </div>
+                    <p style="text-align: center;">
+                        <a href="javascript:;" style="text-decoration: underline;color:#1d71b7;">更多</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -262,7 +265,7 @@
                         <p class="time"><span>2017-1-6 09:20</span></p>
                         <div class="clearfix duanxinZuoBox">
                             <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
-                            <div class="fl duanxintxt"><span>【技术局办公室】从2017年起职称外语成绩不再作为我社专业技术职务任职资格参评的必备条件。</span><span id="huifu">回复</span><span class="quxiaobiaoji">取消标记</span></div>
+                            <div class="fl duanxintxt"><span>【技术局办公室】从2017年起职称外语成绩不再作为我社专业技术职务任职资格参评的必备条件。</span><span  class="huifu">回复</span><span class="quxiaobiaoji">取消标记</span></div>
                             <i class="iconfont duihuakuangZuo">&#xe79b;</i>
                         </div>
                     </div>
@@ -273,7 +276,7 @@
                         <p class="time"><span>2017-1-6 09:20</span> <img src="../img/new.gif" alt=""></p>
                         <div class="clearfix duanxinZuoBox">
                             <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
-                            <div class="fl duanxintxt"><span>【赵某某】明天下午到404开会。</span><span id="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
+                            <div class="fl duanxintxt"><span>【赵某某】明天下午到404开会。</span><span  class="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
                             <i class="iconfont duihuakuangZuo">&#xe79b;</i>
                         </div>
                     </div>
@@ -306,13 +309,13 @@
                         <p class="time"><span>2017-1-6 09:20</span></p>
                         <div class="clearfix duanxinZuoBox">
                             <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
-                            <div class="fl duanxintxt"><span>【办公厅办公室】你有哪些春晚独家记忆？</span><span id="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
+                            <div class="fl duanxintxt"><span>【办公厅办公室】你有哪些春晚独家记忆？</span><span class="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
                             <i class="iconfont duihuakuangZuo">&#xe79b;</i>
                         </div>
                     </div>
                 </div>
                 <!-- 回复弹框 -->
-                <div id="huifuPop">
+                <div id="huifuPop" style="display: none;">
                     <i class="iconfont huifucloseBtn">&#xe760;</i>
                     <p>
                         <span>接收人：</span>
@@ -336,8 +339,34 @@
                     <input id="chazhaolianxiren" type="text" onfocus="chazhaolianxirenonfocus.call(this);" onblur="chazhaolianxirenonblur.call(this);" />
                     <a class="searchIconA_lxr " href="#"><i class="iconfont searchIcon" style="font-size: 19px;">&#xe600;</i></a>
                 </div>
-                <div style="height: 250px; overflow: auto;margin: 15px 0;">
+                <div id="treeDemoBox" style="height: 250px; overflow: auto;margin: 15px 0;display: block;">
                     <ul id="treeDemo" class="ztree"></ul>
+                </div>
+                <!-- 子机构弹框 -->
+                <div class="zijigouPop" style="margin: 20px;display: none;">
+                    <p><img src="../img/rentou.png" alt=""><span>孙玉哲</span><img src="../img/shuxing_duanxin.png" style="cursor:pointer;margin: 0 8px;"><img class="xiaoxiShortCut" src="../img/xiaoxi.png" style="cursor:pointer;"></p>
+                    <ul style="background-color: #f7f5f6;width: 170px;padding: 10px">
+                        <li>
+                            <span>部门:</span>
+                            <span>技术部</span>
+                        </li>
+                        <li>
+                            <span>手机:</span>
+                            <span>138 0002 0098</span>
+                        </li>
+                        <li>
+                            <span>传真:</span>
+                            <span>010-8888888</span>
+                        </li>
+                        <li>
+                            <span>电话:</span>
+                            <span>010-6666666</span>
+                        </li>
+                        <li>
+                            <span>邮箱:</span>
+                            <span>syz@126.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="jishitongxun wodepindao tongxunlu">
@@ -423,58 +452,15 @@
             </div>
         </div>
     </div>
+    <!-- 消息弹框 -->
+    <div id="xiaoxiPop" class="clearfix" style="display: none;">
+        <div class="clearfix">
+            <span class="fl">内&nbsp;容：</span>
+            <textarea class="fl" name="" id="" cols="20" rows="3" style="padding-left: 6px;padding-top: 6px;"></textarea>
+        </div>
+        <p style="text-align: right;margin-top: 10px;"><a class="fasongBtn" href="javascript:;">发送</a>
+        </p>
     </div>
-    </div>
-    </div>
-    </div>
-    <!-- 子机构弹框 -->
-    <!-- <div class="zijigouPop">
-        <ul>
-            <li>
-                <span>部门:</span>
-                <span>技术部</span>
-            </li>
-            <li>
-                <span>手机:</span>
-                <span>138 0002 0098</span>
-            </li>
-            <li>
-                <span>传真:</span>
-                <span>010-8888888</span>
-            </li>
-            <li>
-                <span>电话:</span>
-                <span>010-6666666</span>
-            </li>
-            <li>
-                <span>邮箱:</span>
-                <span>syz@126.com</span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="iconfont">&#xe6bc;</i>
-                </a>
-            </li>
-            <li>
-                <i class="iconfont">&#xe6a9;</i>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="iconfont">&#xe648;</i>
-                </a>
-            </li>
-            <li>
-                <i class="iconfont">&#xe6a9;</i>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="iconfont">&#xe641;</i>
-                </a>
-            </li>
-        </ul>
-    </div> -->
     <script src="../js/jquery-1.9.1.min.js"></script>
     <!--[if lte IE 6]>
     
@@ -490,9 +476,10 @@
     <script>
     $(function() {
         $quxiaobiaoji = $('.quxiaobiaoji');
-        $huifu = $('#huifu');
+        $huifu = $('.huifu');
         $huifuPop = $('#huifuPop');
         $huifucloseBtn = $('.huifucloseBtn');
+        $huifufasongBtn = $('.huifufasongBtn');
         $quxiaobiaoji.click(function() {
             var $this = $(this);
             if ($this.text() === '标记') {
@@ -504,12 +491,36 @@
         $huifucloseBtn.click(function() {
             $huifuPop.hide();
         })
-        $huifu.click(function() {
+         $huifufasongBtn.click(function() {
+            $huifuPop.hide();
+        })
+
+        $huifu.click(function(event) {
             $huifuPop.toggle();
+            $huifuPop.css({
+                position: 'absolute',
+                top: event.clientY - 50 + 'px'
+            });
+        })
+
+        var $chazhaolianxiren = $('#chazhaolianxiren');
+        var $zijigouPop = $('.zijigouPop');
+        var $searchIconA_lxr = $('.searchIconA_lxr');
+        var $treeDemoBox = $('#treeDemoBox');
+        $chazhaolianxiren.on('keyup', function(e) {
+
+            if (e.keyCode == 13) {
+
+                $zijigouPop.css('display', 'block');
+                $treeDemoBox.css('display', 'none');
+            }
+        });
+        $searchIconA_lxr.on('click', function() {
+            $zijigouPop.css('display', 'block');
+            $treeDemoBox.css('display', 'none');
         })
 
     })
-   
     </script>
 </body>
 
