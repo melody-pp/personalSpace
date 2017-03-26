@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订阅</title>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <link rel="stylesheet" href="../css/treeStyle.css"/>
+    <link rel="stylesheet" href="../zTree_v3-master/css/zTreeStyle/zTreeStyle.css"/>
+    <style>
+        /*内容*/
+        .content {
+            margin-top: 16px;
+        }
+
+        .content-header {
+            height: 48px;
+            background-color: #f0f5ff;
+            border-bottom: 1px solid #b5cbf8;
+            position: relative;
+        }
+
+        .content-header div {
+            line-height: 48px;
+            position: relative;
+            float: left;
+        }
+
+        .content-header-shoucang {
+            margin-right: 160px;
+            margin-left: 10px;
+        }
+
+        .content-header-shoucang .list-header-arrow {
+            left: 70px;
+        }
+
+        .wodedingyue-wrap {
+            border: 1px solid #b5cbf8;
+        }
+
+        .content-part {
+            position: relative;
+            padding: 12px 0;
+            border-bottom: 1px solid #bcd0f9;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .left-img {
+            float: left;
+            border: 1px solid #dfdfdf;
+        }
+
+        .part-text {
+            width: 500px;
+            float: left;
+            margin-left: 16px;
+        }
+
+        .part-content {
+            margin-top: 10px;
+        }
+
+        .part-content h5 {
+            font-weight: bold;
+        }
+
+        .part-content p {
+            color: #9f9f9f;
+        }
+
+        .part-text-pinglun {
+            width: 364px;
+        }
+
+        .quxiaodingyue {
+            width: 74px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #dfdfdf;
+            border-radius: 2px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            color: #9f9f9f;
+            cursor: pointer;
+        }
+
+        .tianjiadingyue {
+            width: 74px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #dfdfdf;
+            border-radius: 2px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            cursor: pointer;
+            color: #1d71b7;
+        }
+
+        .look-more {
+            text-align: center;
+            height: 52px;
+            line-height: 52px;
+        }
+
+        .look-more a {
+            color: #7f7f7f;
+        }
+
+        .tuijiandingyue-wrap {
+            margin-top: 10px;
+        }
+
+        .tuijiandingyue-wrap .content-header {
+            background-color: #fff;
+        }
+
+        .part-text-dingyue {
+            width: 460px;
+        }
+
+        .dingyuerenshu {
+            left: 94px;
+            bottom: 9px;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="comm-header">
+    <div class="comm-header-inner">
+        <img class="header-logo" src="../img/header-logo.png"/>
+        <span class="header-text">新华社办公信息化平台</span>
+        <img class="kongjian-logo" src="../img/kongjian-logo.png"/>
+        <span class="kongjian-text">我的个人空间</span>
+        <ul class="header-nav">
+            <li>
+                <a href="">
+                    <img src="../img/header-nav-icon1.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../img/header-nav-icon2.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../img/header-nav-icon3.png"/>
+                </a>
+            </li>
+            <li>
+                <img src="../img/header-nav-fenge.png"/>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../img/header-nav-icon4.png"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--有效区域-->
+<div class="wrap clearfloat">
+
+    <!--左侧列表-->
+    <div class="left-list-wrap">
+        <div class="personal clearfloat">
+            <img src="../img/touxiang.png"/>
+
+            <div class="introduce">
+                <h4>张某某 · 技术局</h4>
+
+                <p>
+                    出发之前永远是梦想，上路之后永远是挑战。
+                </p>
+            </div>
+        </div>
+
+        <div class="left-list">
+            <div>
+                <div class="list-header" id="wodepindao">
+                    <h4>
+                        <i class="wodepindao"></i>
+                        我的频道
+                    </h4>
+                    <span class="list-header-more">+
+
+                        <div class="left-hidediv hidediv" id="left-hidediv">
+                            <ul class="clearfloat">
+                                <li class="all-check">
+                                    <label>
+                                        <input class="left-quanbu-btn" type="checkbox" name="all" value="">全部
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">邮件
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">个人云盘
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">短信
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">我的日程
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">通知公告
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">订阅
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">待办事项
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">收藏
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pindao" value="">共享空间
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span class="list-header-arrow"></span>
+                </div>
+                <ul>
+                    <li>
+
+                        <a href=""><i class="list-icon-youjian"></i>邮件<span>2</span></a>
+                    </li>
+                    <li>
+
+                        <a href=""><i class="list-icon-duanxin"></i>短信<span>2</span></a>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-tongzhigonggao"></i>通知公告</a>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-daibanshixiang"></i>待办事项</a>
+                    </li>
+                    <li style="font-weight: bold;background-color: #dce8ff;">
+
+                        <a href=""> <i class="list-icon-dingyue" style="background-position: -46px  -136px;"></i>订阅</a>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-shoucang"></i>收藏</a>
+                    </li>
+                </ul>
+                <ul class="left-list-ul2">
+                    <li>
+                        <hr/>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-wodericheng"></i>我的日程</a>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-gongxiangkongjian"></i>共享空间</a>
+                    </li>
+                    <li>
+
+                        <a href=""> <i class="list-icon-gerenyunpan"></i>个人云盘</a>
+                    </li>
+                </ul>
+
+                <div class="list-more list-more-upicon">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="left-list">
+            <div>
+                <div class="list-header">
+                    <h4>
+                        <i class="jishitongxun"></i>
+                        即时通讯
+                    </h4>
+                    <span class="list-header-arrow"></span>
+                </div>
+                <ul>
+                    <li>
+                        <a href=""><i class="list-icon-lianxiren"></i>联系人</a>
+                    </li>
+                    <li>
+                        <i class="list-icon-qunzu"></i>
+                        群组
+                        <ul>
+                            <li><a href=""><i class="list-icon-muqinghuaju"></i>穆青话剧组招募</a></li>
+                            <li><a href=""><i class="list-icon-xinoa"></i>新OA</a></li>
+                            <li><a href=""><i class="list-icon-yuanxingsheji"></i>原型设计</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--中心内容-->
+    <div class="container">
+        <div class="con-header" id="con-header">
+            <ul class="clearfloat">
+                <li>
+                    <i class="con-header-yunpan"></i>
+                    <span>云盘</span>
+                </li>
+                <li>
+                    <i class="con-header-duanxin"></i>
+                    <span>短信</span>
+                </li>
+                <li>
+                    <i class="con-header-youxiang"></i>
+                    <span>邮箱</span>
+                </li>
+                <li>
+                    <i class="con-header-richeng"></i>
+                    <span>日程</span>
+                </li>
+            </ul>
+            <div class="con-header-more">+
+                <div class="left-hidediv hidediv" id="top-hidediv">
+                    <ul class="clearfloat">
+                        <li class="all-check">
+                            <label>
+                                <input class="top-quanbu-btn" type="checkbox" name="all" value="">全部
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">云盘
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">论坛
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">邮箱
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">即时通讯
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">短信
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">共享空间
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="pindao" value="">日程
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div class="wodedingyue-wrap">
+                <div class="content-header clearfloat">
+                    <div class="content-header-shoucang">
+                        <h4>我的订阅</h4>
+                        <span class="list-header-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="content-part clearfloat">
+
+                    <div class="left-img">
+                        <img src="../img/pinglun-img.png"/>
+                    </div>
+                    <div class="part-text part-text-pinglun">
+                        <div class="part-content">
+                            <h5>美墨：有形之墙未起,“无形之墙”已成 </h5>
+
+                            <p style="text-indent: 2em;">
+                                美国总统特朗普宣布,欲在墨西哥和美国边境修建边境墙,阻挡来自墨西哥等拉美国家的非法移民,以此缓解美墨边境地区的毒品交易和犯罪问题,并提高美国人的就业率。</p>
+
+                            <p style="text-indent: 2em;">然而,边境墙真的能阻挡拉美人进入美国的脚步吗?修建边境墙能否一劳永逸地解决墨美边境地区的犯罪和就业等问题?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span>来自《外交评论》</span>
+                        <span>|</span>
+                        <span>10分钟前</span>
+                    </div>
+                    <div class="quxiaodingyue">
+                        取消订阅
+                    </div>
+                </div>
+
+                <div class="content-part clearfloat">
+
+                    <div class="left-img">
+                        <img src="../img/pinglun-img.png"/>
+                    </div>
+                    <div class="part-text part-text-pinglun">
+                        <div class="part-content">
+                            <h5>美墨：有形之墙未起,“无形之墙”已成 </h5>
+
+                            <p style="text-indent: 2em;">
+                                美国总统特朗普宣布,欲在墨西哥和美国边境修建边境墙,阻挡来自墨西哥等拉美国家的非法移民,以此缓解美墨边境地区的毒品交易和犯罪问题,并提高美国人的就业率。</p>
+
+                            <p style="text-indent: 2em;">然而,边境墙真的能阻挡拉美人进入美国的脚步吗?修建边境墙能否一劳永逸地解决墨美边境地区的犯罪和就业等问题?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span>来自《外交评论》</span>
+                        <span>|</span>
+                        <span>10分钟前</span>
+                    </div>
+                    <div class="quxiaodingyue">
+                        取消订阅
+                    </div>
+                </div>
+                <div class="content-part clearfloat">
+
+                    <div class="left-img">
+                        <img src="../img/pinglun-img.png"/>
+                    </div>
+                    <div class="part-text part-text-pinglun">
+                        <div class="part-content">
+                            <h5>美墨：有形之墙未起,“无形之墙”已成 </h5>
+
+                            <p style="text-indent: 2em;">
+                                美国总统特朗普宣布,欲在墨西哥和美国边境修建边境墙,阻挡来自墨西哥等拉美国家的非法移民,以此缓解美墨边境地区的毒品交易和犯罪问题,并提高美国人的就业率。</p>
+
+                            <p style="text-indent: 2em;">然而,边境墙真的能阻挡拉美人进入美国的脚步吗?修建边境墙能否一劳永逸地解决墨美边境地区的犯罪和就业等问题?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span>来自《外交评论》</span>
+                        <span>|</span>
+                        <span>10分钟前</span>
+                    </div>
+                    <div class="quxiaodingyue">
+                        取消订阅
+                    </div>
+                </div>
+
+                <div class="look-more">
+                    <a>查看更多...</a>
+                </div>
+            </div>
+
+            <div class="tuijiandingyue-wrap">
+                <div class="content-header clearfloat">
+                    <div class="content-header-shoucang">
+                        <h4>推荐订阅</h4>
+                    </div>
+                </div>
+
+                <div class="content-part clearfloat">
+
+                    <div class="left-img">
+                        <img src="../img/dingyue-img1.png"/>
+                    </div>
+                    <div class="part-text part-text-dingyue">
+                        <div class="part-content">
+                            <h5>知与行</h5>
+
+                            <p>真知即所以为行，不行不足谓之知，此为学者吃紧立教，俾务躬行则可。</p>
+                        </div>
+                    </div>
+
+                    <div class="tianjiadingyue">
+                        +订阅
+                    </div>
+
+                    <div class="dingyuerenshu tag-wrap">
+                        <i class="tag-arrow"></i>
+                        <span>203人订阅</span>
+                    </div>
+                </div>
+                <div class="content-part clearfloat">
+
+                    <div class="left-img">
+                        <img src="../img/dingyue-img1.png"/>
+                    </div>
+                    <div class="part-text part-text-dingyue">
+                        <div class="part-content">
+                            <h5>知与行</h5>
+
+                            <p>真知即所以为行，不行不足谓之知，此为学者吃紧立教，俾务躬行则可。</p>
+                        </div>
+                    </div>
+
+                    <div class="tianjiadingyue">
+                        +订阅
+                    </div>
+
+                    <div class="dingyuerenshu tag-wrap">
+                        <i class="tag-arrow"></i>
+                        <span>20003人订阅</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--右侧-->
+    <div class="right-list-wrap">
+        <div class="right-list right-tree">
+            <div class="list-header">
+                <h4>通讯录</h4>
+                <span class="list-header-arrow"></span>
+            </div>
+
+            <div class="tree-wrap">
+                <div class="tree-seach">
+                    <input type="text" placeholder="查找联系人..."/>
+                    <i class="input-search"></i>
+                </div>
+
+                <div class="zTreeDemoBackground left">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right-list lianxiren">
+            <div class="list-header">
+                <h4>常用联系人</h4>
+                <span class="list-header-more">+</span>
+                <span class="qingkong">清空</span>
+                <span class="list-header-arrow"></span>
+            </div>
+            <div class="lianxiren-list">
+                <ul class="clearfloat">
+                    <li>
+                        <i class="list-icon-muqinghuaju"></i>
+                    </li>
+                    <li>
+                        张某某
+                    </li>
+                    <li>
+                        体育部
+                    </li>
+                    <li>
+                        <i class="list-icon-youjian"></i>
+                    </li>
+                    <li>
+                        <i class="list-icon-duanxin"></i>
+                    </li>
+                    <li>
+                        <i class="jishitongxun"></i>
+                    </li>
+                </ul>
+                <ul class="clearfloat">
+                    <li>
+                        <i class="list-icon-muqinghuaju"></i>
+                    </li>
+                    <li>
+                        张某某
+                    </li>
+                    <li>
+                        体育部
+                    </li>
+                    <li>
+                        <i class="list-icon-youjian"></i>
+                    </li>
+                    <li>
+                        <i class="list-icon-duanxin"></i>
+                    </li>
+                    <li>
+                        <i class="jishitongxun"></i>
+                    </li>
+                </ul>
+                <ul class="clearfloat">
+                    <li>
+                        <i class="list-icon-muqinghuaju"></i>
+                    </li>
+                    <li>
+                        张某某
+                    </li>
+                    <li>
+                        体育部
+                    </li>
+                    <li>
+                        <i class="list-icon-youjian"></i>
+                    </li>
+                    <li>
+                        <i class="list-icon-duanxin"></i>
+                    </li>
+                    <li>
+                        <i class="jishitongxun"></i>
+                    </li>
+                </ul>
+                <ul class="clearfloat">
+                    <li>
+                        <i class="list-icon-muqinghuaju"></i>
+                    </li>
+                    <li>
+                        张某某
+                    </li>
+                    <li>
+                        体育部
+                    </li>
+                    <li>
+                        <i class="list-icon-youjian"></i>
+                    </li>
+                    <li>
+                        <i class="list-icon-duanxin"></i>
+                    </li>
+                    <li>
+                        <i class="jishitongxun"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="right-list tuijiandingyue" id="tuijiandingyue">
+            <div class="list-header">
+                <h4>推荐订阅</h4>
+                <span class="close" onclick="javascript:$('#tuijiandingyue').hide();"></span>
+            </div>
+
+            <div id="lunboContainer">
+
+                <div class="lunboImg img-active">
+                    <!--<img src="../img/dingyue-img1.png"/>-->
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img1.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>知与行</h5>
+
+                            <p>知得笃实，便是行；行得精察，便是知。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>2003</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img1.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>知与行</h5>
+
+                            <p>知得笃实，便是行；行得精察，便是知。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>203</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunboImg">
+                    <!--<img src="../img/dingyue-img2.png"/>-->
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img2.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>知与行</h5>
+
+                            <p>知得笃实，便是行；行得精察，便是知。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>20003</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img2.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>知与行</h5>
+
+                            <p>知得笃实，便是行；行得精察，便是知。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>203</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunboImg">
+                    <!--<img src="../img/dingyue-img3.png"/>-->
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img3.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>外交评论</h5>
+
+                            <p>全国国际政治类核心期刊。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>203</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                    <div class="dingyue-div clearfloat">
+                        <div class="dingyue-img">
+                            <img src="../img/dingyue-img3.png"/>
+                        </div>
+                        <div class="dingyue-text">
+                            <h5>外交评论</h5>
+
+                            <p>全国国际政治类核心期刊。</p>
+
+                            <div class="tag-wrap">
+                                <i class="tag-arrow"></i>
+                                <span>2003</span>
+                            </div>
+                            <div class="dingyue-btn">+订阅</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="navController lunbo-left">＜</a>
+                <a class="navController lunbo-right">＞</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="right-list richengtixing" id="richengtixing">
+            <div class="list-header">
+                <h4>日程提醒</h4>
+                <span class="close" onclick="javascript:$('#richengtixing').hide();"></span>
+            </div>
+            <div class="tixing-list">
+                <img src="../img/richengtixing-img.png"/>
+                <h5>视频会议</h5>
+
+                <div class="tixing-btn">提醒</div>
+                <span>2天后</span>
+            </div>
+            <hr/>
+            <div class="tixing-list">
+                <img src="../img/richengtixing-img.png"/>
+                <h5>视频会议</h5>
+
+                <div class="tixing-btn">提醒</div>
+                <span>2天后</span>
+            </div>
+            <hr/>
+            <div class="tixing-list">
+                <img src="../img/richengtixing-img.png"/>
+                <h5>视频会议</h5>
+
+                <div class="tixing-btn">提醒</div>
+                <span>2天后</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script src="../zTree_v3-master/js/jquery.ztree.core.js"></script>
+<script src="../js/comm.js"></script>
+</body>
+</html>

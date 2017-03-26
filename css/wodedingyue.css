@@ -1,0 +1,100 @@
+.dingyueBOX>div {
+    width: 49%;
+    display: inline-block;
+}
+
+.tongzhigonggao .arrow-left-tongzhigonggao {
+    position: absolute;
+    right: 25px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-right-tongzhigonggao {
+    position: absolute;
+    right: 4px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-left-tongbao {
+    position: absolute;
+    right: 25px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-right-tongbao {
+    position: absolute;
+    right: 4px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-left-zongbianshi {
+    position: absolute;
+    right: 25px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-right-zongbianshi {
+    position: absolute;
+    right: 4px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-left-zuixinxiaoxi {
+    position: absolute;
+    right: 25px;
+    bottom: -1px;
+}
+
+.tongzhigonggao .arrow-right-zuixinxiaoxi {
+    position: absolute;
+    right: 4px;
+    bottom: -1px;
+}
+
+.dingyueUl li {
+    border-bottom: 1px solid #efe7e7;
+}
+
+.dingyueUl img {
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.tuijiandingyueUl li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #a3a5a9;
+}
+
+.tuijiandingyueUl a.dingyueCss {
+    display: inline-block;
+    padding: 1px 3px;
+    border: 1px solid #1d71b7;
+    color: #1d71b7;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.daibanTitle .searchBox {
+    border: 1px solid #e2e0db;
+    height: 30px;
+    line-height: 30px;
+}
+
+.dingyueBOX .quxiaoguanzhu {
+    padding: 0 5px;
+    background-color: #e2e0e0;
+    font-size: 13px;
+    position: absolute;
+    right: 50px;
+    height: 26px;
+    line-height: 26px;
+    top: 6px;
+    color: #b7b7b7;
+}
+.dingyueUl li span{
+	font-size: 13px;
+}

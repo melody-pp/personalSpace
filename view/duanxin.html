@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>短信</title>
+    <link rel="stylesheet" href="../css/idangerous.swiper.css">
+    <link rel="stylesheet" href="../zTree_v3-master/css/zTreeStyle/zTreeStyle.css" />
+    <link rel="stylesheet" href="../css/screen.css" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/gerenkongjian.css">
+    <link rel="stylesheet" href="../css/duanxin.css">
+    <!--[if IE 7]>
+    <style>
+    .header {margin-left: -110px;}
+    </style>
+    <![endif]-->
+    <style>
+
+    </style>
+</head>
+
+<body onselectstart="return false">
+    <div class="header">
+        <div class="container clearfix" id="container">
+            <div class="left fl">
+                <img id="logo" class="logo" src="../img/logo.png" alt="">
+                <h3 class="siteName fl">新华社办公信息化平台</h3>
+                <img class="zone fl" src="../img/zone.gif" alt="">
+                <h4 class="subSiteName fl">我的个人空间</h4>
+            </div>
+            <div class="right fr">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/home.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/goback.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/pifu.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/gexian.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/tuichu.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="left">
+            <div class="clearfix xhLeftCol_user ">
+                <a class="xhAvatar_50" title="我的个人空间ID:179360151" style="background-image: url(../img/userImg.gif);"></a>
+                <p class="userIfo">
+                    <a href="#" class="sl2">张某三</a> ·
+                    <a href="#" class="sl2">技术局</a>
+                    <p class="gexingqianming">出发之前永远是梦想，上路之后永远是挑战。</p>
+                </p>
+            </div>
+            <div class="wodepindao">
+                <h3 class="panelTitleH3"><i class="iconfont" style="color:#1d71b7;font-size: 25px;margin-right: 6px;">&#xe6c9;</i>我的频道
+                <i id="plus" class="iconfont" style="color:#566cae;margin-left: 10px;font-size: 20px;cursor: pointer;">&#xe614;</i>
+                <i id="suozhan" class="iconfont suozhan">&#xe661;</i>
+                </h3>
+                <!-- 增加弹框 -->
+                <!-- <div id="zengjia_pop" class="zengjia_pop" style="display: none;">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value" checked=""><span style="color:#003297;">全部</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">邮件
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">个人云盘
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">短信
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">我的日程
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">通知公告
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">订阅
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">待办事项
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">收藏
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">共享空间
+                        </label>
+                    </p>
+                </div> -->
+                <div id="listItem" class="listItem">
+                    <ul id="appMenu" class="appMenu">
+                        <li>
+                            <a href="yunpan.html">
+                                <img src="../img/yunpan.png" style="vertical-align: middle;">
+                                <span>云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="yewudaiban.html">
+                                <img src="../img/daiban.png" style="vertical-align: middle;">
+                                <span>业务待办</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="activeMenu" href="" style="position: relative;">
+                                <img src="../img/duanxin1.png" style="vertical-align: middle;">
+                                <span>短信</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red">&#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="youjian.html" style="position: relative;">
+                                <img src="../img/youjian.png" style="vertical-align: middle;">
+                                <span>邮件</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red">&#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/richeng.png" style="vertical-align: middle;">
+                                <span>日程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/shoucang.png" style="vertical-align: middle;">
+                                <span>标记</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gongxiangkongjian.html">
+                                <img src="../img/gongxiangkongjian.png" style="vertical-align: middle;">
+                                <span>共享空间</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/dingyue.png" style="vertical-align: middle;">
+                                <span>我的订阅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jishitongxun wodepindao tongxunlu tuijianyuedu">
+                <h3 class="panelTitleH3" style="background-color:#fff;border-bottom: none;"> 推荐订阅
+                      <a class="arrow-left" href="#" style="color:#ddd;">
+                            <i class="iconfont">&#xe642;</i>
+                        </a>
+                        <a class="arrow-right" href="#">
+                            <i class="iconfont">&#xe620;</i>
+                        </a>
+                    </h3>
+                <div class="tjyydContent">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="dingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="dingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报er </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="duanxinSearch clearfix">
+                <span class="duanxinTitle fl">短信</span>
+                <span class="faduanxin fl">发短信</span>
+                <div class="searchBox clearfix fr">
+                    <input class="fl searchIpt" type="text">
+                    <i class="iconfont fl searchIcon">&#xe600;</i>
+                </div>
+            </div>
+            <div class="duanxinContent">
+                <div class="dunxinIfo clearfix">
+                    <i class="iconfont fl duanxinIcon">&#xe612;</i>
+                    <div class="fl duanxinNeirong">
+                        <p class="time"><span>2017-1-6 09:20</span></p>
+                        <div class="clearfix duanxinZuoBox">
+                            <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
+                            <div class="fl duanxintxt"><span>【技术局办公室】从2017年起职称外语成绩不再作为我社专业技术职务任职资格参评的必备条件。</span><span id="huifu">回复</span><span class="quxiaobiaoji">取消标记</span></div>
+                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dunxinIfo clearfix">
+                    <i class="iconfont fl duanxinIcon">&#xe612;</i>
+                    <div class="fl duanxinNeirong">
+                        <p class="time"><span>2017-1-6 09:20</span> <img src="../img/new.gif" alt=""></p>
+                        <div class="clearfix duanxinZuoBox">
+                            <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
+                            <div class="fl duanxintxt"><span>【赵某某】明天下午到404开会。</span><span id="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
+                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dunxinIfo clearfix">
+                    <i class="iconfont fl duanxinIcon">&#xe612;</i>
+                    <div class="fl duanxinNeirong">
+                        <p class="time"><span>2017-1-6 09:20</span></p>
+                        <div class="clearfix duanxinZuoBox">
+                            <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
+                            <div class="fl duanxintxt"><span>【办公厅办公室】元旦放假通知：2017年1月1日-2017年1月3日休息收到请回复。</span><span id="huifu" style="color: #a3a3a3;">已回复</span><span class="quxiaobiaoji">标记</span></div>
+                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dunxinIfo clearfix huifuduanxinIfo">
+                    <i class="iconfont fr duanxinIcon">&#xe612;</i>
+                    <div class="fr duanxinNeirong">
+                        <p class="time"><span>2017-1-6 09:20</span></p>
+                        <div class="clearfix duanxinZuoBox">
+                            <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
+                            <div class="fl duanxintxt"><span> 收到。</span></div>
+                            <i class="iconfont duihuakuangYou">&#xe79c;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dunxinIfo clearfix">
+                    <i class="iconfont fl duanxinIcon">&#xe612;</i>
+                    <div class="fl duanxinNeirong">
+                        <p class="time"><span>2017-1-6 09:20</span></p>
+                        <div class="clearfix duanxinZuoBox">
+                            <div class="fl" style="font-size: 13px;"><i class="iconfont pointIcon">&#xe609;</i><span>106903331234123</span>：</div>
+                            <div class="fl duanxintxt"><span>【办公厅办公室】你有哪些春晚独家记忆？</span><span id="huifu">回复</span><span class="quxiaobiaoji">标记</span></div>
+                            <i class="iconfont duihuakuangZuo">&#xe79b;</i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 回复弹框 -->
+                <div id="huifuPop">
+                    <i class="iconfont huifucloseBtn">&#xe760;</i>
+                    <p>
+                        <span>接收人：</span>
+                        <input style="padding-left: 6px;" type="text" value="106903331234123">
+                    </p>
+                    <p class="clearfix" style="margin-top: 10px;">
+                        <span class="fl" style="margin-right: 6px;">内&nbsp;&nbsp;&nbsp;容：</span>
+                        <textarea class="fl" name="" id="" cols="65" rows="5" style="padding-left: 10px;padding-top: 10px;"></textarea>
+                        <a class="fl huifufasongBtn" href="javascript:;">发送</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="jishitongxun wodepindao tongxunlu " style="margin-top: 0;">
+                <h3 class="panelTitleH3"> 通讯录
+                <i id="suozhantxl" class="iconfont suozhan">&#xe661;</i>
+                </h3>
+                <div class="tongxunluSearchBox clearfix">
+                    <label id="searchTxt_lxr" class="placeholder" style="color:#a3a3a3;" for="chazhaolianxiren">查找联系人...</label>
+                    <input id="chazhaolianxiren" type="text" onfocus="chazhaolianxirenonfocus.call(this);" onblur="chazhaolianxirenonblur.call(this);" />
+                    <a class="searchIconA_lxr " href="#"><i class="iconfont searchIcon" style="font-size: 19px;">&#xe600;</i></a>
+                </div>
+                <div style="height: 250px; overflow: auto;margin: 15px 0;">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+            </div>
+            <div class="jishitongxun wodepindao tongxunlu">
+                <h3 class="panelTitleH3"> 常用联系人
+                <i id="suozhanlxr" class="iconfont suozhan">&#xe661;</i>
+                <i id="changyonglianxirenPlus" class="iconfont" style="font-size: 22px;margin: 5px;vertical-align: middle;cursor: pointer;">&#xe614;</i>
+                <a href="#"  style="color:#787878;">清空</a>
+                </h3>
+                <div class="cylxrContent">
+                    <ul>
+                        <li>
+                            <img src="../img/qunItem.png" style="vertical-align: -3px;">
+                            <span>张某某</span>
+                            <span>体育部</span>
+                            <a href="#" style="margin-left: 22px;">
+                                <i class="iconfont">&#xe6bc;</i>
+                            </a>
+                            <a href="#">
+                                <i class="iconfont">&#xe648;</i>
+                            </a>
+                            <a href="javascript:;">
+                                <img src="../img/lanxin.png" class="lanxinImg">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../img/qunItem.png" style="vertical-align: -3px;">
+                            <span>张某某</span>
+                            <span>体育部</span>
+                            <a href="#" style="margin-left: 22px;">
+                                <i class="iconfont">&#xe6bc;</i>
+                            </a>
+                            <a href="#">
+                                <i class="iconfont">&#xe648;</i>
+                            </a>
+                            <a href="#">
+                                <img src="../img/lanxin.png" class="lanxinImg">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../img/qunItem.png" style="vertical-align: -3px;">
+                            <span>张某某</span>
+                            <span>体育部</span>
+                            <a href="#" style="margin-left: 22px;">
+                                <i class="iconfont">&#xe6bc;</i>
+                            </a>
+                            <a href="#">
+                                <i class="iconfont">&#xe648;</i>
+                            </a>
+                            <a href="#">
+                                <img src="../img/lanxin.png" class="lanxinImg">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../img/qunItem.png" style="vertical-align: -3px;">
+                            <span>张某某</span>
+                            <span>体育部</span>
+                            <a href="#" style="margin-left: 22px;">
+                                <i class="iconfont">&#xe6bc;</i>
+                            </a>
+                            <a href="#">
+                                <i class="iconfont">&#xe648;</i>
+                            </a>
+                            <a href="#">
+                                <img src="../img/lanxin.png" class="lanxinImg">
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../img/qunItem.png" style="vertical-align: -3px;">
+                            <span>张某某</span>
+                            <span>体育部</span>
+                            <a href="#" style="margin-left: 22px;">
+                                <i class="iconfont">&#xe6bc;</i>
+                            </a>
+                            <a href="#">
+                                <i class="iconfont">&#xe648;</i>
+                            </a>
+                            <a href="#">
+                                <img src="../img/lanxin.png" class="lanxinImg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- 子机构弹框 -->
+    <!-- <div class="zijigouPop">
+        <ul>
+            <li>
+                <span>部门:</span>
+                <span>技术部</span>
+            </li>
+            <li>
+                <span>手机:</span>
+                <span>138 0002 0098</span>
+            </li>
+            <li>
+                <span>传真:</span>
+                <span>010-8888888</span>
+            </li>
+            <li>
+                <span>电话:</span>
+                <span>010-6666666</span>
+            </li>
+            <li>
+                <span>邮箱:</span>
+                <span>syz@126.com</span>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe6bc;</i>
+                </a>
+            </li>
+            <li>
+                <i class="iconfont">&#xe6a9;</i>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe648;</i>
+                </a>
+            </li>
+            <li>
+                <i class="iconfont">&#xe6a9;</i>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe641;</i>
+                </a>
+            </li>
+        </ul>
+    </div> -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <!--[if lte IE 6]>
+    
+    <script>
+         
+        $("#logo").attr("src", "../img/logo.gif");
+    </script>
+    <![endif]-->
+    <script src="../zTree_v3-master/js/jquery.ztree.core.js"></script>
+    <script src="../js/idangerous.swiper.min.js"></script>
+    <script src="../js/public_p.js"></script>
+    <script src="../js/mytree.js"></script>
+    <script>
+    $(function() {
+        $quxiaobiaoji = $('.quxiaobiaoji');
+        $huifu = $('#huifu');
+        $huifuPop = $('#huifuPop');
+        $huifucloseBtn = $('.huifucloseBtn');
+        $quxiaobiaoji.click(function() {
+            var $this = $(this);
+            if ($this.text() === '标记') {
+                $this.text('取消标记');
+            } else {
+                $this.text('标记');
+            }
+        })
+        $huifucloseBtn.click(function() {
+            $huifuPop.hide();
+        })
+        $huifu.click(function() {
+            $huifuPop.toggle();
+        })
+
+    })
+   
+    </script>
+</body>
+
+</html>

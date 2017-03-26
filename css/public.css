@@ -1,0 +1,641 @@
+body,
+div,
+p,
+ul,
+li,
+h4,
+h3,
+img,
+textarea,
+input {
+    font-family: Microsoft YaHei;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    font-size: 14px;
+}
+
+i {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    zoom: 1;
+    /*==for IE6/7 Maxthon2==*/
+}
+
+input,
+textarea {
+    outline: none;
+    resize: none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.header {
+    height: 46px;
+    line-height: 46px;
+    background-color: #1d71b7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    min-width: 1024px;
+}
+
+.header .container {
+    position: relative;
+    margin-right: 110px;
+    margin-left: 110px;
+}
+
+.header .left {
+    padding-left: 12px;
+}
+
+.header .left .zone {
+    margin-top: 8px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.header .left .siteName {
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: 400;
+}
+
+.header .left .logo {
+    position: absolute;
+    top: 0;
+    left: -73px;
+}
+
+.header .left .subSiteName {
+    font-size: 18px;
+    color: #ecedff;
+    font-weight: 300;
+}
+
+.header .right li {
+    float: left;
+}
+
+.header .right li a {
+    padding-left: 9px;
+    _padding-left: 9px;
+    padding-right: 9px;
+    _padding-right: 9px;
+}
+
+.header .right li a img {
+    margin-top: 12px;
+    border: none;
+}
+
+#wrapper {
+    position: relative;
+    top: 0;
+    margin: 0 110px 0 110px;
+    padding-top: 68px;
+    _padding-top: 22px;
+    padding-left: 220px;
+    padding-right: 250px;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+#wrapper .left,
+#wrapper .right {
+    position: absolute;
+    top: 45px;
+    _top: 22px;
+    z-index: 5;
+}
+
+#wrapper .left {
+    width: 200px;
+    left: 0;
+    _left: -220px;
+}
+
+#wrapper .right {
+    width: 230px;
+    right: 0;
+    _right: 100px;
+    top: 68px;
+}
+
+#wrapper .middle {
+    position: relative;
+}
+
+#wrapper .middle .middleMenu li {
+    float: left;
+}
+
+#wrapper .middle .middleMenu li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #003297;
+}
+
+#wrapper .middle .middleMenu li a span {
+    margin-left: 5px;
+}
+
+#wrapper .middle .middleMenu li a .iconfont {
+    font-size: 22px;
+}
+
+.xhLeftCol_user {
+    position: relative;
+    height: 64px;
+    padding-top: 24px;
+    _padding-top: 0;
+}
+
+.xhLeftCol_user .xhAvatar_50 {
+    float: left;
+    margin-right: 10px;
+}
+
+.xhAvatar_50 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+.xhLeftCol_user p.userIfo {
+    float: left;
+    font-size: 12px;
+    width: 120px;
+    font-weight: bold;
+}
+
+.xhLeftCol_user p.gexingqianming {
+    color: #2e2d2d;
+    font-size: 12px;
+    width: 120px;
+    float: left;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../view/iconfont/iconfont.eot');
+    src: url('../view/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../view/iconfont/iconfont.woff') format('woff'), url('../view/iconfont/iconfont.ttf') format('truetype'), url('../view/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.panelTitleH3 {
+    font-size: 16px;
+    color: #003297;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.wodepindao {
+    padding: 0 12px;
+    border: 1px solid #b5cbf8;
+    position: relative;
+    background-color: #fbfbfb;
+    margin-top: 15px;
+}
+
+.wodepindao .appsubMenu {
+    padding-bottom: 32px;
+    *margin-top: -20px;
+    _padding-top: 5px;
+}
+
+.wodepindao .appMenu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+#appMenu {
+    padding: 10px 0;
+    _padding-top: 10px;
+}
+
+.iconfont.suozhan {
+    color: #566cae;
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.wodepindao .zengjia_pop {
+    width: 155px;
+    _width: 181px;
+    border: 1px solid #bfd2f8;
+    background-color: #fff;
+    padding: 12px;
+    font-size: 12px;
+    position: absolute;
+    top: 36px;
+    left: 122px;
+    _left: 112px;
+    opacity: .9;
+    z-index: 100;
+}
+
+.zengjia_pop p {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.wodepindao.tongxunlu {
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.wodepindao.tongxunlu .panelTitleH3 {
+    background-color: #f0f5ff;
+    padding: 0 12px;
+}
+
+.wodepindao.tongxunlu h3 {
+    padding: 0 12px;
+}
+
+.wodepindao.tongxunlu h3 i {
+    right: 3px;
+}
+
+#navigation li a {
+    color: #292929;
+    font-size: 12px;
+}
+
+.cylxrContent {
+    padding: 11px;
+}
+
+.cylxrContent li {
+    margin-bottom: 5px;
+}
+
+.cylxrContent li span {
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.cylxrContent li a {
+    margin-left: 5px;
+}
+
+.cylxrContent li i {
+    color: #1d71b7;
+    vertical-align: middle;
+}
+
+.tjyydContent {
+    padding: 15px 12px;
+    overflow: hidden;
+}
+
+.tuijianyuedu .arrow-left {
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+.tuijianyuedu .arrow-right {
+    position: absolute;
+    right: 4px;
+    top: 0;
+}
+
+.tjyydContent .arrow-left2 {
+    position: absolute;
+    right: 25px;
+    bottom: 4px;
+}
+
+.tjyydContent .arrow-right2 {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+.ztree li span.button.noline_close {
+    background: url(../img/shuxing_jia.png) no-repeat;
+}
+
+.ztree li span.button.noline_open {
+    background: url(../img/shuxing_jian.png) no-repeat;
+}
+
+.ztree li span.button {
+    background: none;
+    width: 0;
+    height: 0;
+}
+
+.ztree {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ztree li span.button.switch {
+    width: 16px;
+    height: 12px;
+}
+
+.ztree li span.button.noline_docu {
+    background: url(../img/rentou.png) no-repeat -1px 0;
+    width: 18px;
+    height: 18px;
+}
+
+.ztree li {
+    line-height: 20px;
+}
+
+.ztree * {
+    font-size: 14px;
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#xiaoxiPop {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px 12px;
+    background-color: #f5f4f4;
+    z-index: 100;
+    width: 206px;
+}
+
+#xiaoxiPop .fasongBtn {
+    padding: 2px 12px;
+    background-color: #00a9f4;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.lanxinImg {
+    width: 16px;
+    cursor: pointer;
+}
+
+.pagination {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+}
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #999;
+    box-shadow: 0px 1px 2px #555 inset;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.swiper-active-switch {
+    background: #fff;
+}
+
+.content-slide .ifo {
+    width: 119px;
+}
+
+.dy {
+    color: #1d71b7;
+    border: 1px solid #1d71b7;
+    padding: 0 2px;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ifoTitle {
+    position: relative;
+}
+
+.rctx .rctxContent {
+    padding: 15px 12px;
+    _padding: 8px 12px;
+}
+
+.rctx .rctxContent .rctxitem {
+    border-bottom: 1px solid #d0c9c9;
+    position: relative;
+    height: 55px;
+    _top: 16px;
+    margin-bottom: 8px;
+    _margin-bottom: 20px;
+}
+
+.rctxContent .rctxitem .tjydImg {
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    cursor: pointer!important;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.rctxContent .rctxitem .ifo {
+    width: 140px;
+    position: absolute;
+    top: -3px;
+    left: 62px;
+}
+
+.treeview li {
+    padding-top: 0;
+}
+
+#suozhanbox {
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    border-top: 1px solid #b5cbf8;
+    margin-top: 10px;
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    *top: 316px;
+    _top: 330px;
+    _left: -13px;
+}
+
+#suozhanbox.up {
+    top: 215px;
+    _top: 223px;
+}
+
+.closeIcon {
+    *margin-top: -20px;
+    _position: relative;
+}
+
+#allItemsPop {
+    width: 167px;
+    *width: 166px;
+    _width: 188px;
+    border: 1px solid #bed1f9;
+    position: absolute;
+    top: 30px;
+    left: 312px;
+    *left: 328px;
+    background-color: #fff;
+    opacity: .9;
+    padding: 10px;
+    z-index: 20;
+}
+
+#allItemsPop label span {
+    font-size: 12px;
+}
+
+#closeDialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback for web browsers that don't support RGBa nor filter */
+    background: transparent\9;
+    /* backslash 9 hack to prevent IE 8 from falling into the fallback */
+    background: rgba(0, 0, 0, 0.3);
+    /* RGBa declaration for browsers that support it */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4c000000, endColorstr=#4c000000);
+    /* needed for IE 6-8 */
+    zoom: 1;
+    /* needed for IE 6-8 */
+    text-align: center;
+    z-index: 100;
+    _margin-left: -15px;
+}
+
+#closeDialog p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#closeDialog buttonsGrop {
+    display: inline-block;
+    width: 105px;
+    margin: 0 auto;
+}
+
+#closeDialog .confirmBtn,
+#closeDialog .cancelBtn {
+    display: inline-block;
+    width: 60px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#closeDialog .confirmBtn {
+    background-color: #1d71b7;
+    color: #fff;
+}
+
+#closeDialog .cancelBtn {
+    background-color: #fff;
+    color: #000;
+}
+
+.dingyueUl li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #a3a5a9;
+}
+
+.dingyueUl a.dingyueCss {
+    display: inline-block;
+    padding: 0 3px;
+    border: 1px solid #1d71b7;
+    color: #1d71b7;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.activeMenu {
+    background-color: #f2f4fb;
+}
+
+.ztree li a.curSelectedNode {
+    background-color: #fff;
+    border: none;
+}
+.tongxunluIcon{
+    margin-right: 2px;
+      font-size: 24px;
+    vertical-align: 0px;
+    color:#1d71b7;
+}

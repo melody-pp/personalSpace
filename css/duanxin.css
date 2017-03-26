@@ -1,0 +1,138 @@
+.middle .duanxinSearch {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.duanxinSearch .duanxinTitle {
+    display: inline-block;
+    background-color: #ecedff;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #425ca7;
+    font-weight: 700;
+}
+
+.duanxinSearch .faduanxin {
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.searchBox .searchIpt {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    padding-left: 6px;
+}
+
+.duanxinSearch .searchBox {
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+}
+
+.searchBox .searchIcon {
+    padding: 0 8px;
+    background: #e0dedb;
+    cursor: pointer;
+}
+
+.duanxinContent .dunxinIfo {
+    margin-top: 18px;
+}
+
+.dunxinIfo .duanxinIcon {
+    font-size: 24px;
+    color: #a6caec;
+}
+
+.dunxinIfo .duanxinNeirong {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.duanxinNeirong .duanxintxt {
+    max-width: 340px;
+    font-size: 13px;
+}
+
+.duanxinNeirong .time {
+    font-size: 13px;
+    
+}
+.huifuduanxinIfo .time{
+    text-align: right;
+}
+
+.duanxinNeirong .pointIcon {
+    color: #fdad36;
+    font-size: 13px;
+}
+
+.duanxinNeirong #huifu {
+    color: red;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.duanxinNeirong .quxiaobiaoji {
+    color: red;
+    cursor: pointer;
+}
+
+.duanxinZuoBox {
+    position: relative;
+    background-color: #f0f5ff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.duanxinNeirong .duihuakuangZuo {
+    position: absolute;
+    left: -11px;
+    top: -4px;
+    color: #f0f5ff;
+    font-size: 21px;
+}
+
+.duanxinNeirong .duihuakuangYou {
+    position: absolute;
+    right: -13px;
+    top: -2px;
+    color: #f0f5ff;
+    font-size: 21px;
+}
+
+.huifuduanxinIfo .duanxinNeirong {
+    margin-right: 20px;
+}
+
+#huifuPop {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    position: relative;
+}
+
+#huifuPop .huifufasongBtn {
+    background-color: #00a9f4;
+    color: #fff;
+    padding: 2px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#huifuPop .huifucloseBtn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}

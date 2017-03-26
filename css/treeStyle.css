@@ -1,0 +1,13 @@
+
+div.zTreeDemoBackground {
+    width: 250px;
+    height: 264px;
+    text-align: left;
+}
+
+ul.ztree {
+    margin-top: 10px;
+    height: 254px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>日程管理</title>
+    <link rel="stylesheet" href="../css/idangerous.swiper.css">
+    <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/jquery-timepicker/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/screen.css" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/gerenkongjian.css">
+    <link rel="stylesheet" href="../css/richengguanli.css">
+    <!--[if IE 7]>
+    <style>
+    .header {margin-left: -110px;}
+    </style>
+    <![endif]-->
+</head>
+
+<body onselectstart="return false">
+    <div class="header">
+        <div class="container clearfix" id="container">
+            <div class="left fl">
+                <img id="logo" class="logo" src="../img/logo.png" alt="">
+                <h3 class="siteName fl">新华社办公信息化平台</h3>
+                <img class="zone fl" src="../img/zone.gif" alt="">
+                <h4 class="subSiteName fl">我的个人空间</h4>
+            </div>
+            <div class="right fr">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/home.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/goback.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/pifu.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/gexian.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/tuichu.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="left">
+            <div class="clearfix xhLeftCol_user ">
+                <a class="xhAvatar_50" title="我的个人空间ID:179360151" style="background-image: url(../img/userImg.gif);"></a>
+                <p class="userIfo">
+                    <a href="#" class="sl2">张某三</a> ·
+                    <a href="#" class="sl2">技术局</a>
+                    <p class="gexingqianming">出发之前永远是梦想，上路之后永远是挑战。</p>
+                </p>
+            </div>
+            <div class="wodepindao">
+                <h3 class="panelTitleH3">
+                <i class="iconfont" style="color: #1d71b7;font-size: 25px;margin-right: 2px;">&#xe6c9;</i>
+                <span>我的频道</span>
+                <i id="plus" class="iconfont" style="color:#566cae;margin-left: 10px;font-size: 20px;cursor: pointer;">&#xe614;</i>
+                <i id="suozhan" class="iconfont suozhan">&#xe661;</i>
+                </h3>
+                <!-- 增加弹框 -->
+                <!-- <div id="zengjia_pop" class="zengjia_pop" style="display: none;">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value" checked=""><span style="color:#003297;">全部</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">邮件
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">个人云盘
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">短信
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">我的日程
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">通知公告
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">订阅
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">待办事项
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">收藏
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">共享空间
+                        </label>
+                    </p>
+                </div> -->
+                <div id="listItem" class="listItem">
+                    <ul id="appMenu" class="appMenu">
+                        <li>
+                            <a href="yunpan.html">
+                                <img src="../img/yunpan.png" style="vertical-align: middle;">
+                                <span>云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/daiban.png" style="vertical-align: middle;">
+                                <span>业务待办</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="duanxin.html" style="position: relative;">
+                                <img src="../img/duanxin.png" style="vertical-align: middle;">
+                                <span>短信</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red"> &#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="youjian.html" style="position: relative;">
+                                <img src="../img/youjian.png" style="vertical-align: middle;">
+                                <span>邮件</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red">&#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="activeMenu">
+                                <img src="../img/richeng1.png" style="vertical-align: middle;">
+                                <span>日程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/shoucang.png" style="vertical-align: middle;">
+                                <span>标记</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gongxiangkongjian.html">
+                                <img src="../img/gongxiangkongjian.png" style="vertical-align: middle;">
+                                <span>共享空间</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/dingyue.png" style="vertical-align: middle;">
+                                <span>我的订阅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jishitongxun wodepindao tongxunlu tuijianyuedu">
+                <h3 class="panelTitleH3" style="background-color:#fff;border-bottom: none;"> 推荐订阅
+                      <a class="arrow-left" href="#" style="color:#ddd;">
+                            <i class="iconfont">&#xe642;</i>
+                        </a>
+                        <a class="arrow-right" href="#">
+                            <i class="iconfont">&#xe620;</i>
+                        </a>
+                    </h3>
+                <div class="tjyydContent">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="dingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="dingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报er </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div id="calendar">
+                <div class="leftSearch">
+                    <div class="searchBox clearfix">
+                        <input class="fl searchIpt" type="text">
+                        <i class="iconfont fl searchIcon">&#xe600;</i>
+                    </div>
+                    <p>
+                        <img class="tianjiaguanzhuImg" src="../img/tianjiaguanzhu.png">
+                        <span>孙玉哲</span>
+                    </p>
+                    <a class="tianjiaguanzhuBtn" href="javascript:;">
+                        <i class="iconfont">&#xe680;</i>
+                        <span>添加关注</span>
+                    </a>
+                </div>
+            </div>
+            <!-- 添加日程Dialog -->
+            <div id="tianjiarichengDialog" style="display: none;">
+                <div class="shijianDidian">
+                    <label class="placeholderTitle">请输入事件标题</label>
+                    <input type="text" value="">
+                    <label class="placeholderAdderss">地点</label>
+                    <input type="text" value="">
+                </div>
+                <div class="shijianduan clearfix">
+                    <div class="allDay fl">
+                        <label for="quantian">全天</label>
+                        <input type="checkbox" id="quantian">
+                    </div>
+                    <div class="qishishijian fl">
+                        <p>
+                            <span>开始时间：</span>
+                            <input id="kaishishijian" type="text">
+                        </p>
+                        <p>
+                            <span>结束时间：</span>
+                            <input id="jieshushijian" type="text">
+                        </p>
+                    </div>
+                </div>
+                <div class="cishu">
+                    <span>重复：</span>
+                    <select name="" id="">
+                        <option value="" selected="">每天</option>
+                        <option value="">周一</option>
+                        <option value="">周二</option>
+                        <option value="">周三</option>
+                        <option value="">周四</option>
+                        <option value="">周五</option>
+                    </select>
+                    <span style="margin-left: 14px;">提醒：</span>
+                    <select name="" id="">
+                        <option value="" selected="">15分钟前</option>
+                        <option value="">20分钟前</option>
+                        <option value="">30分钟前</option>
+                    </select>
+                </div>
+                <div class="canyuzhe">
+                    <p>参与者</p>
+                    <p class="tianjiaImg">
+                        <img src="../img/userImg.png" alt="">
+                        <img src="../img/userImg.png" alt="">
+                        <img src="../img/userImg.png" alt="">
+                        <i class="iconfont tianjianIco">&#xe63d;</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    window.addEventListener = window.addEventListener || function(e, f) {
+        window.attachEvent('on' + e, f);
+    };
+
+    if (typeof Array.prototype.forEach != 'function') {
+        Array.prototype.forEach = function(callback) {
+            for (var i = 0; i < this.length; i++) {
+                callback.apply(this, [this[i], i, this]);
+            }
+        };
+    }
+    </script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/idangerous.swiper.min.js"></script>
+    <script src="../js/fullcalendar/fullcalendar.js"></script>
+    <script src="../js/fullcalendar/locale/zh-cn.js"></script>
+    <script src="../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../js/jquery-timepicker/jquery.timepicker.min.js"></script>
+    <!--[if lte IE 6]>
+    <style>
+    
+    </style>
+        <script>
+        $("#logo").attr("src","../img/logo.gif");
+        </script>
+    <![endif]-->
+    <script src="../js/public_p.js"></script>
+    <script>
+    /* document.get.appendChild('<i class="iconfont " style="color: #0099ff;">&# xe609; < /i>');*/
+
+
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'month,agendaWeek,agendaDay',
+            center: 'prev,title,next',
+            right: 'today'
+        },
+        defaultDate: '2017-06-12',
+        defaultView: 'month',
+        editable: true,
+        selectable: true,
+        selectHelper: true,
+        select: function(start, end) {
+            $('#tianjiarichengDialog').dialog({
+                title: '添加日程',
+                width: 450,
+                height: 400,
+                buttons: {
+                    '取消': function() {
+                        $(this).dialog('close');
+                    },
+                    '创建': function() {
+                        
+                        var eventData = {
+                            title: $('#eventName').val(),
+                            start: start,
+                            end: end
+                        }
+                        $('#calendar').fullCalendar('renderEvent', eventData, true);
+                        $('#calendar').fullCalendar('unselect');
+                    }
+                    
+                }
+            });
+        },
+        events: [{
+            title: 'All Day Event',
+            start: '2017-06-01'
+        }, {
+            title: 'Long Event',
+            start: '2017-06-07',
+            end: '2014-06-10'
+        }, {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2017-06-09T16:00:00'
+        }, {
+            id: 990,
+            title: 'Repeating Event',
+            start: '2017-06-16T16:00:00'
+        }, {
+            title: 'Meeting',
+            start: '2017-06-12T10:30:00',
+            end: '2017-06-12T12:30:00'
+        }, {
+            title: 'Lunch',
+            start: '2017-06-12T12:00:00'
+        }, {
+            title: 'Birthday Party',
+            start: '2017-06-13T07:00:00'
+        }, {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2017-06-28'
+        }]
+    });
+    $('#kaishishijian').timepicker({
+        'minTime': '8:00 am',
+        'maxTime': '6:30 pm'
+    });
+    $('#jieshushijian').timepicker({
+        'minTime': '8:00 am',
+        'maxTime': '6:30 pm'
+    });
+    $(".leftSearch").height($(".fc-view-container").height());
+    </script>
+</body>
+
+</html>

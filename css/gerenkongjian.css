@@ -1,0 +1,271 @@
+#wrapper .middle .hastoolsBox {
+    border: 1px solid #b5cbf8;
+    padding-top: 0;
+    background-color: #f0f5ff;
+    margin-top: 20px;
+}
+
+#wrapper .middle .hastoolsBox .tools {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #b5cbf8;
+    position: relative;
+    z-index: 10;
+}
+
+#wrapper .middle .hastoolsBox .tools li {
+    float: left;
+    _display:inline;
+}
+
+#wrapper .middle .hastoolsBox .tools .search {
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 11px;
+    _display: inline;
+}
+
+#seaechTxt {
+    color: #a3a3a3;
+    position: absolute;
+    left: 7px;
+    top: -1px;
+}
+
+
+#searchbox {
+    border: 0;
+    height: 23px;
+    _height: 25px;
+    line-height: 23px;
+    _line-height: 23px;
+    width: 160px;
+    padding-left: 6px;
+    outline: none;
+}
+
+.tongxunluSearchBox {
+    position: relative;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    margin: 5px 12px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.searchIconA_lxr {
+    background: none;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+}
+
+#chazhaolianxiren {
+    border: 0;
+    height: 27px;
+    line-height: 27px;
+    width: 150px;
+    padding-left: 6px;
+    outline: none;
+    position: absolute;
+    left: 0;
+}
+
+#searchTxt_lxr {
+    position: absolute;
+    top: -1px;
+    left: 6px;
+    z-index: 10;
+}
+
+#wrapper .middle .hastoolsBox .tools a {
+    color: #3f3f3f;
+}
+
+.hastoolsBox .tools .searchIconA {
+    width: 26px;
+    background-color: #ececec;
+}
+
+.hastoolsBox .tools .searchIcon {
+    font-size: 18px;
+    color: #9d9d9d;
+    margin-left: 5px;
+}
+
+.hastoolsBox .newsWarning {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #dce8ff;
+    border-bottom: 1px solid #5a8fd3;
+}
+
+.hastoolsBox .newsWarning span {
+    color: #003297;
+    font-size: 16px;
+}
+
+.hastoolsBox .newMail {
+    padding: 15px;
+    position: relative;
+}
+
+.hastoolsBox .newMail p {}
+
+.bottomTools li {
+    float: right;
+}
+
+.bottomTools li>a {
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.kuaisuhuifu {
+    border: 1px solid #b5cbf8;
+   
+    margin-left: 50px;
+    margin-top: 10px;
+    *position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+#kshfInput {
+    border: 0;
+    outline: none;
+    width: 450px;
+    _width: 460px;
+    height: 38px;
+    line-height: 38px;
+    border-right: 1px solid #b5cbf8;
+    padding-left: 10px;
+    *position: absolute;
+    *left: 0;
+}
+
+.kuaisuhuifu .kshfBtn {
+    padding: 0 15px;
+    
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #373737;
+    *position: absolute;
+    *right: 0;
+}
+
+.youFuJiandeNewMail {
+    border: 1px solid #b5cbf8;
+    background-color: #f0f5ff;
+    margin-top: 12px;
+    padding: 15px;
+    position: relative;
+}
+
+.youFuJiandeNewMail p {}
+
+.fj_xz_yl {
+    margin-left: 41px;
+}
+
+.fj_xz_yl a {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #003297;
+}
+
+.dbsxTable {
+    border: 1px solid #b5cbf8;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    color: #2c2c2c;
+}
+
+th,
+td {
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 13px;
+}
+
+.daibanshixiang {
+    position: relative;
+}
+
+.newMail .nmImg {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    _left: -3px;
+    z-index: 2;
+}
+
+#allMsgPop {
+    width: 66px;
+    _width: 82px;
+    background-color: #fff;
+    opacity: .9;
+    border: 1px solid #bed1f9;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    padding: 10px;
+    z-index: 5;
+}
+
+#wrapper .middle .hastoolsBox #allMsgPop li {
+    float: none;
+    text-align: center;
+}
+
+#wrapper .middle .hastoolsBox #allMsgPop li a {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#allMsgPop li {
+    *display: inline;
+}
+#xiaoxishaixuanPop li {
+    *display: inline;
+}
+#xiaoxishaixuanPop {
+    width: 88px;
+    _width: 108px;
+    border: 1px solid #bed1f9;
+    position: absolute;
+    top: 40px;
+    right: 26px;
+    _right: 33px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: .9;
+}
+
+#wrapper .middle .hastoolsBox #xiaoxishaixuanPop li {
+    float: none;
+    text-align: left;
+}
+#wrapper .middle .hastoolsBox #xiaoxishaixuanPop li label {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    font-size: 12px;
+}

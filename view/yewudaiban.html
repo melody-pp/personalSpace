@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>业务待办</title>
+    <link rel="stylesheet" href="../css/idangerous.swiper.css">
+    <link rel="stylesheet" href="../js/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../js/jqGrid/css/ui.jqgrid-bootstrap.css">
+    <link rel="stylesheet" href="../css/screen.css" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/gerenkongjian.css">
+    <link rel="stylesheet" href="../css/yewudaiban.css">
+    <!--[if IE 7]>
+    <style>
+    .header {margin-left: -110px;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/Respond/dest/respond.min.js"></script> 
+    <![endif]-->
+</head>
+
+<body onselectstart="return false">
+    <div class="header">
+        <div class="container clearfix" id="container">
+            <div class="left fl">
+                <img id="logo" class="logo" src="../img/logo.png" alt="">
+                <h3 class="siteName fl">新华社办公信息化平台</h3>
+                <img class="zone fl" src="../img/zone.gif" alt="">
+                <h4 class="subSiteName fl">我的个人空间</h4>
+            </div>
+            <div class="right fr">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/home.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/goback.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/pifu.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/gexian.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/tuichu.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="left">
+            <div class="clearfix xhLeftCol_user ">
+                <a class="xhAvatar_50" title="我的个人空间ID:179360151" style="background-image: url(../img/userImg.gif);"></a>
+                <p class="userIfo">
+                    <a href="#" class="sl2">张某三</a> ·
+                    <a href="#" class="sl2">技术局</a>
+                    <p class="gexingqianming">出发之前永远是梦想，上路之后永远是挑战。</p>
+                </p>
+            </div>
+            <div class="wodepindao">
+                <h3 class="panelTitleH3">
+                <i class="iconfont" style="color: #1d71b7;font-size: 25px;margin-right: 2px;">&#xe6c9;</i>
+                <span>我的频道</span>
+                <i id="plus" class="iconfont" style="color:#566cae;margin-left: 10px;font-size: 20px;cursor: pointer;">&#xe614;</i>
+                <i id="suozhan" class="iconfont suozhan">&#xe661;</i>
+                </h3>
+                <!-- 增加弹框 -->
+                <!-- <div id="zengjia_pop" class="zengjia_pop" style="display: none;">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value" checked=""><span style="color:#003297;">全部</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">邮件
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">个人云盘
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">短信
+                        </label>
+                        <label style="margin-left: 39px;">
+                            <input type="checkbox" name="checkbox" value="value">我的日程
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">通知公告
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">订阅
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">待办事项
+                        </label>
+                        <label style="margin-left: 15px;">
+                            <input type="checkbox" name="checkbox" value="value">收藏
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox" value="value">共享空间
+                        </label>
+                    </p>
+                </div> -->
+                <div id="listItem" class="listItem">
+                    <ul id="appMenu" class="appMenu">
+                        <li>
+                            <a href="yunpan.html">
+                                <img src="../img/yunpan.png" style="vertical-align: middle;">
+                                <span>云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="activeMenu">
+                                <img src="../img/daiban1.png" style="vertical-align: middle;">
+                                <span>业务待办</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="duanxin.html" style="position: relative;">
+                                <img src="../img/duanxin.png" style="vertical-align: middle;">
+                                <span>短信</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red"> &#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="youjian.html" style="position: relative;">
+                                <img src="../img/youjian.png" style="vertical-align: middle;">
+                                <span>邮件</span>
+                                <i class="iconfont" style="font-size: 34px;position: absolute;left: 63px;top: -4px;color: red">&#xe609;</i>
+                                <span style="position: absolute;left: 76px;top: -7px;font-size: 13px;color: #fff;">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="richeng.html">
+                                <img src="../img/richeng.png" style="vertical-align: middle;">
+                                <span>日程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/shoucang.png" style="vertical-align: middle;">
+                                <span>标记</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gongxiangkongjian.html">
+                                <img src="../img/gongxiangkongjian.png" style="vertical-align: middle;">
+                                <span>共享空间</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wodedingyue.html">
+                                <img src="../img/dingyue.png" style="vertical-align: middle;">
+                                <span>我的订阅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jishitongxun wodepindao tongxunlu tuijianyuedu">
+                <h3 class="panelTitleH3" style="background-color:#fff;border-bottom: none;"> 推荐订阅
+                      <a class="arrow-left" href="#" style="color:#ddd;">
+                            <i class="iconfont">&#xe642;</i>
+                        </a>
+                        <a class="arrow-right" href="#">
+                            <i class="iconfont">&#xe620;</i>
+                        </a>
+                    </h3>
+                <div class="tjyydContent">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="tuijiandingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-slide" style="width: 176px;">
+                                    <ul class="tuijiandingyueUl">
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 1. 前进报er </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 2. 新华新青年 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 3. 新华档案 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                        <li>
+                                            <img src="../img/hot.gif" alt="">
+                                            <span> 4. 产品研究院 </span>
+                                            <a href="javascript:;" class="dingyueCss">+订阅</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="daibanTitle clearfix">
+                <span class="fl" style="font-size: 15px;font-weight: 600;">业务待办</span>
+                <div class="searchBox clearfix fr">
+                    <input class="fl searchIpt" type="text">
+                    <i class="iconfont fl searchIcon">&#xe600;</i>
+                </div>
+            </div>
+            <div id="jqGridDiv">
+                <table id="jqGrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/idangerous.swiper.min.js"></script>
+    <script src="../js/jqGrid/js/jquery.jqGrid.min.js"></script>
+    <script src="../js/jqGrid/js/i18n/grid.locale-cn.js"></script>
+    <!--[if lte IE 6]>
+    <style>
+    
+    </style>
+        <script>
+        $("#logo").attr("src","../img/logo.gif");
+        </script>
+    <![endif]-->
+    <script src="../js/public_p.js"></script>
+    <script>
+    if (typeof Element.prototype.addEventListener === 'undefined') {
+        Element.prototype.addEventListener = function(e, callback) {
+            e = 'on' + e;
+            return this.attachEvent(e, callback);
+        };
+    }
+    /* document.get.appendChild('<i class="iconfont " style="color: #0099ff;">&# xe609; < /i>');*/
+
+
+
+    $(".leftSearch").height($(".fc-view-container").height());
+    var $jqGrid = $('#jqGrid');
+    $jqGrid.jqGrid({
+        // url: '/api/getGridData',
+        // postData: {},
+        // mtype: 'post',
+        pager: $('#jqGridPager'),
+        colModel: [{
+            label: '标题',
+            name: 'title'
+        }, {
+            label: '接收时间',
+            name: 'acceptTime'
+        }, {
+            label: '类型',
+            name: 'type'
+        }, {
+            label: '紧急程度',
+            name: 'urgency'
+        }, {
+            label: '责任单位',
+            name: 'apartment'
+        }],
+        datatype: "json",
+        recordpos: 'center',
+        pagerpos: 'right',
+        regional: 'cn',
+        emptyrecords: "无数据",
+        width: '100%',
+        height: 200,
+        rowNum: 50,
+        rownumbers: true,
+        viewrecords: true,
+        shrinkToFit: true,
+        responsive: true,
+        autowidth: true,
+        autoScroll: true,
+        altRows: true,
+        gridview: true,
+        forceFit: false,
+        rowList: [10, 20, 50, 100, 500, 1000],
+        jsonReader: {
+            root: "list",
+            page: "page",
+            total: "total",
+            records: "records",
+            repeatitems: false
+        },
+        prmNames: {
+            page: "page",
+            rows: "pageSize"
+        },
+        // caption: 'moumoubiaoge',
+        error: function(xhr, ajaxOptions, thrownError) {
+            msg.alert(xhr.responseText);
+        }
+    });
+    $jqGrid.jqGrid('navGrid', '#jqGridPager', {
+        add: false,
+        edit: false,
+        del: false,
+        search: false,
+        refresh: true,
+        refreshtext: '刷新'
+    });
+    for (var i = 0; i < 15; i++) {
+        $jqGrid.addRowData(i, {
+            title: '某某标题',
+            acceptTime: '2011-11-11',
+            type: '督办',
+            urgency: '紧急',
+            apartment: '办公厅'
+        })
+    }
+
+    $('#searchBtn').on('click', function() {
+        $jqGrid.jqGrid('setGridParam', {
+            postData: {
+                title: $('#searchInput').val()
+            }
+        }).trigger('reloadGrid');
+    })
+
+    /*{
+        list: [{}, {}, {}],
+        page: 1,
+        total: 2,
+        records: 100
+    }*/
+    function suitTableHeight() {
+        $(".ui-jqgrid-bdiv").height($(window).innerHeight() - $(".header").height() - 164);
+    }
+    suitTableHeight();
+    $(window).on('resize', suitTableHeight);
+    </script>
+</body>
+
+</html>
