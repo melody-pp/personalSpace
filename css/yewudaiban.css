@@ -59,7 +59,9 @@ a:hover{
     line-height: 30px;
     border-bottom: 1px dashed #a3a5a9;
 }
-
+.tuijiandingyueUl li img{
+    vertical-align: -1px;
+}
 .tuijiandingyueUl a.dingyueCss {
     display: inline-block;
     padding: 1px 3px;
@@ -68,7 +70,7 @@ a:hover{
     border-radius: 5px;
     font-size: 12px;
     margin-left: 10px;
-    height: 16px;
+  
     line-height: 16px;
 }
 .header .right li a img {
