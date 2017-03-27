@@ -10,6 +10,7 @@ $(function() {
                 $('#' + node.tId + '_a').append('<img data-node_id="' + node.id + '" src="../img/shuxing_duanxin.png" style="cursor:pointer;margin: 0 8px;"><img class="xiaoxiShortCut" src="../img/xiaoxi.png" style="cursor:pointer;">')
             }
         }
+        $('.ztree li span.button.noline_docu').html('').append('<i class="iconfont" style="font-size:17px;color:#1d71b7;">&#xe6e7;</i>');
     })
     // 树形结构
 var setting = {

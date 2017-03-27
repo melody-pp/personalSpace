@@ -398,9 +398,7 @@ textarea {
 }
 
 .ztree li span.button.noline_docu {
-    background: url(../img/rentou.png) no-repeat -1px 0;
-    width: 18px;
-    height: 18px;
+   margin-top: 10px;
 }
 
 .ztree li {

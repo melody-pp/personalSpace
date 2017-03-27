@@ -161,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="biaoji.html">
                                 <img src="../img/shoucang.png" style="vertical-align: middle;">
                                 <span>标记</span>
                             </a>
@@ -183,10 +183,10 @@
             </div>
             <div class="jishitongxun wodepindao tongxunlu tuijianyuedu">
                 <h3 class="panelTitleH3" style="background-color:#fff;border-bottom: none;"> 推荐订阅
-                      <a class="arrow-left" href="#" style="color:#ddd;">
+                      <a class="arrow-left" href="#" style="color:#ddd;text-decoration: none;">
                             <i class="iconfont">&#xe642;</i>
                         </a>
-                        <a class="arrow-right" href="#">
+                        <a class="arrow-right" href="#" style="text-decoration: none;">
                             <i class="iconfont">&#xe620;</i>
                         </a>
                     </h3>
@@ -384,7 +384,7 @@
         records: 100
     }*/
     function suitTableHeight() {
-        $(".ui-jqgrid-bdiv").height($(window).innerHeight() - $(".header").height() - 164);
+        $(".ui-jqgrid-bdiv").height($(window).innerHeight() - $(".header").height() - 100);
     }
     suitTableHeight();
     $(window).on('resize', suitTableHeight);
