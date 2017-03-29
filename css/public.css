@@ -142,6 +142,7 @@ textarea {
     width: 200px;
     left: 0;
     _left: -220px;
+    margin-bottom: 10px;
 }
 
 #wrapper .right {
@@ -347,6 +348,7 @@ textarea {
 .tjyydContent {
     padding: 15px 12px;
     overflow: hidden;
+    padding-bottom: 5px;
 }
 
 .tuijianyuedu .arrow-left {
@@ -398,7 +400,7 @@ textarea {
 }
 
 .ztree li span.button.noline_docu {
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 .ztree li {
@@ -631,9 +633,15 @@ textarea {
     background-color: #fff;
     border: none;
 }
-.tongxunluIcon{
+
+.tongxunluIcon {
     margin-right: 2px;
-      font-size: 24px;
+    font-size: 24px;
     vertical-align: 0px;
-    color:#1d71b7;
+    color: #1d71b7;
+}
+
+.tjdyMore {
+    text-align: center;
+    margin-top: 5px;
 }

@@ -2,12 +2,16 @@ $(function() {
     function suitWarpperWidth() {
         var windowWith = $(window).innerWidth();
         var $wrapper = $('#wrapper');
+        var $container = $('#container');
         if (windowWith < 1131) {
             $wrapper.css('margin', 0);
+            $container.css('margin', 0);
         } else if (windowWith < 1366) {
             $wrapper.css('margin', 0 + ' ' + (windowWith - 1130) / 2 + 'px');
+            $container.css('margin', 0 + ' ' + (windowWith - 1130) / 2 + 'px');
         } else {
             $wrapper.css('margin', '0 110px');
+            $container.css('margin', '0 110px');
         }
     }
 
@@ -57,7 +61,9 @@ $(function() {
     var $zengjia_pop = $('#zengjia_pop');
     var $plus = $('#plus');
     var $suozhan = $('#suozhan');
+    var $suozhan_fzbg = $('#suozhan_fzbg');
     var $listItem = $('#listItem');
+    var $listItem_fzbg = $('#listItem_fzbg');
     var $suozhanjstx = $('#suozhanjstx');
     var $appMenu = $('#appMenu');
     var $appsubMenu = $('#appsubMenu');
@@ -103,6 +109,9 @@ $(function() {
 
     $suozhan.click(function() {
         $listItem.toggle();
+    })
+    $suozhan_fzbg.click(function() {
+        $listItem_fzbg.toggle();
     })
 
     $suozhansanjiao.click(function() {
