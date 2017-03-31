@@ -3,14 +3,16 @@ $(function() {
 
         var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
         var treeNodes = treeObj.transformToArray(treeObj.getNodes());
-        /*console.log(treeNodes)*/
+        console.log(treeNodes)
         for (var i = 0, len = treeNodes.length; i < len; i++) {
             var node = treeNodes[i];
             if (node.needPic) {
+
                 $('#' + node.tId + '_a').append('<img data-node_id="' + node.id + '" src="../img/shuxing_duanxin.png" style="cursor:pointer;margin: 0 8px;"><img class="xiaoxiShortCut" src="../img/xiaoxi.png" style="cursor:pointer;">')
+                $('#' + node.tId + '_switch').html(node.isMale ? '<i class="iconfont" style="font-size:17px;color:#309ef9;">&#xe6e7;</i>' : '<i class="iconfont" style="font-size:17px;color:#309ef9;">&#xe606;</i>')
             }
+
         }
-        $('.ztree li span.button.noline_docu').html('').append('<i class="iconfont" style="font-size:17px;color:#1d71b7;">&#xe6e7;</i>');
     })
     // 树形结构
 var setting = {
@@ -81,17 +83,20 @@ var zNodes = [{
     id: 1141,
     pId: 114,
     name: "孙玉哲",
-    needPic: true
+    needPic: true,
+    isMale: true
 }, {
     id: 1142,
     pId: 114,
     name: "张某东",
-    needPic: true
+    needPic: true,
+    isMale: true
 }, {
     id: 1143,
     pId: 114,
     name: "李五",
-    needPic: true
+    needPic: true,
+    isMale: false
 }, {
     id: 12,
     pId: 1,

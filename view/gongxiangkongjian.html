@@ -239,14 +239,14 @@
                             </div>
                         </div>
                     </div>
-                    <p style="text-align: center;">
+                    <p class="tjdyMore">
                         <a href="javascript:;" style="text-decoration: underline;color:#1d71b7;">更多</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="middle">
-           <!--  <ul class="middleMenu clearfix">
+            <!--  <ul class="middleMenu clearfix">
                <li>
                    <a href="#" style="padding-left: 0;">
                        <i class="iconfont" style="color:#6ba3d2;">&#xe61f;</i><span>云盘</span>
@@ -317,16 +317,16 @@
             <div class="fabiaoshuoshuo">
                 <div class="fbssIpt clearfix" style="position: relative; padding-left: 440px">
                     <textarea name="" id="textareaGxkj" style="position: absolute;left: 0;top: 0;width: 440px;"></textarea>
-                    <div class="linkContainer">
-                    <a href="#">
-                        <i class="iconfont">&#xe6ee;</i>
-                    </a>
-                    <a href="#">
-                        <i class="iconfont">&#xe6d1;</i>
-                    </a>
-                    <a href="#">
-                        <i class="iconfont">&#xe602;</i>
-                    </a>
+                    <div class="linkContainer clearfix">
+                        <a href="#">
+                            <i class="iconfont">&#xe6ee;</i>
+                        </a>
+                        <a href="#">
+                            <i class="iconfont">&#xe6d1;</i>
+                        </a>
+                        <a href="#">
+                            <i class="iconfont">&#xe602;</i>
+                        </a>
                     </div>
                 </div>
                 <div class="fbssTools clearfix">
@@ -762,7 +762,7 @@
             loop: true,
             grabCursor: true,
             paginationClickable: true,
-           autowidth: true
+            autowidth: true
         })
 
         $('.arrow-left2').on('click', function(e) {
@@ -792,7 +792,20 @@
             $(this).find('.itemIconCurrent').css('display', 'block');
         })
 
+        function suit1024Width() {
+            var windowWith = $(window).innerWidth();
+            var $fbssIpt = $('.fbssIpt');
+           
+            if (windowWith <= 1024) {
+                $fbssIpt.css('padding-left', '349px');
+                
+            }else{
+              $fbssIpt.css('padding-left', '440px');
+            }
+        }
 
+        suit1024Width();
+        $(window).on('resize', suit1024Width);
 
     })
     var $sousuodongtai = $('#sousuodongtai');

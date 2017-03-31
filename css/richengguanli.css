@@ -24,7 +24,7 @@
 .fc-toolbar.fc-header-toolbar {
     margin-bottom: 0;
     height: 40px;
-    background-color: #dce9ff;
+    background-color: #f0f5ff;
     padding: 0 10px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .fc-widget-header {
-    background-color: #dce9ff;
+    background-color: #f0f5ff;
     height: 30px;
     line-height: 30px;
 }
