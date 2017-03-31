@@ -28,6 +28,11 @@ a {
     text-decoration: none;
     color: #2c2c2c;
 }
+input,
+textarea {
+    outline: none;
+    resize: none;
+}
 
 .fl {
     float: left;
@@ -40,12 +45,6 @@ a {
 .clearfix {
     zoom: 1;
     /*==for IE6/7 Maxthon2==*/
-}
-
-input,
-textarea {
-    outline: none;
-    resize: none;
 }
 
 .clearfix:after {
